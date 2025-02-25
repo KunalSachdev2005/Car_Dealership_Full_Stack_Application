@@ -1,0 +1,137 @@
+<html>
+<head>
+  <link rel = "stylesheet" href = "/static/style.css">
+  <link rel = "stylesheet" href = "/static/bootstrap.min.css">
+  <style>
+    .contact-card {
+      width: 80%;
+      margin: auto;
+      margin-top: 2%;
+      margin-bottom: 10%;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #ccc; /* Added more prominent border */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for better visibility */
+    }
+    .contact-icon {
+      width: 240px;
+      height: 240px;
+      margin: auto;
+      display: block;
+    }
+    .contact-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      border-left: 3px solid #777;
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 5px; /* Reduced space between contact details */
+      margin-bottom: 5px; /* Added bottom margin for consistent spacing */
+    }
+    .contact-info h6 {
+      margin-bottom: 5px; /* Reduced space between heading and content */
+    }
+    .contact-info p {
+      margin-bottom: 0; /* Removed default paragraph bottom margin */
+    }
+    .contact-info a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    .banner {
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .large-image {
+      width: 70%;
+      max-height: 200px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .contact-container {
+      display: flex;
+      flex-direction: row;
+    }
+    .icon-container {
+      width: 50%;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .info-container {
+      width: 50%;
+    }
+  </style>
+</head>
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="card contact-card">
+    <img class="large-image" src="/static/cardealership.jpg" alt="Car Dealership">
+    
+    <div class="contact-container">
+      <div class="icon-container">
+        <img src="/static/customer_service.png" alt="Customer Support" class="contact-icon">
+      </div>
+      
+      <div class="contact-section info-container">
+        <div class="contact-info">
+          <h6>Contact Customer Service</h6>
+          <p><a href="mailto:support@bestcars.com">support@bestcars.com</a></p>
+        </div>
+        
+        <div class="contact-info">
+          <h6>Contact our National Advertising team</h6>
+          <p><a href="mailto:NationalSales@bestcars.com">NationalSales@bestcars.com</a></p>
+        </div>
+        
+        <div class="contact-info">
+          <h6>Contact our Public Relations team</h6>
+          <p><a href="mailto:PR@bestcars.com">PR@bestcars.com</a></p>
+        </div>
+        
+        <div class="contact-info">
+          <h6>Contact the bestcars.com offices</h6>
+          <p>312-611-1111</p>
+        </div>
+        
+        <div class="contact-info">
+          <h6>Become a bestcars.com car dealer</h6>
+          <p>Visit <a href="http://growwithbestcars.com">growwithbestcars.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</html>
