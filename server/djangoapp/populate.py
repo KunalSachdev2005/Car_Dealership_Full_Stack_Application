@@ -24,7 +24,7 @@ def initiate():
         {"name": "Pathfinder", "type": "SUV", "year": 2023, "car_make": car_make_instances[0], "engine_type": "V6", "horsepower": 284},
         {"name": "Qashqai", "type": "SUV", "year": 2019, "car_make": car_make_instances[0], "engine_type": "I4", "horsepower": 140},
         {"name": "XTRAIL", "type": "SUV", "year": 2017, "car_make": car_make_instances[0], "engine_type": "I4", "horsepower": 170},
-        {"name": "A-Class", "type": "HATCHBACK", "year": 2020, "car_make": car_make_instances[1], "engine_type": "I4", "horsepower": 188},  # Fixed year to 2020
+        {"name": "A-Class", "type": "HATCHBACK", "year": 2020, "car_make": car_make_instances[1], "engine_type": "I4", "horsepower": 188},
         {"name": "C-Class", "type": "SEDAN", "year": 2025, "car_make": car_make_instances[1], "engine_type": "I4", "horsepower": 255},
         {"name": "E-Class", "type": "SEDAN", "year": 2024, "car_make": car_make_instances[1], "engine_type": "V6", "horsepower": 362},
         {"name": "A4", "type": "SEDAN", "year": 2024, "car_make": car_make_instances[2], "engine_type": "I4", "horsepower": 201},
