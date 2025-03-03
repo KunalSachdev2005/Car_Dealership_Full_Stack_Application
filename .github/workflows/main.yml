@@ -55,5 +55,5 @@ jobs:
       - name: Run Linter
         run: |
           # find all JavaScript files recursively and run JSHint on them
-          find ./server/database -name "*.js" -exec jshint {} +
+          find ./server/database -name "*.js" -exec jshint --esversion=8 {} +
           echo "Linted all the js files successfully"
