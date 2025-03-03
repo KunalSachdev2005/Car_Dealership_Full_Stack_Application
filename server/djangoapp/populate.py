@@ -1,5 +1,6 @@
 from .models import CarMake, CarModel
 
+
 def initiate():
     car_make_data = [
         {"name": "NISSAN", "description": "Japanese technology", "country_of_origin": "Japan"},
