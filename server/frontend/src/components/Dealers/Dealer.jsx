@@ -20,7 +20,7 @@ const Dealer = () => {
   let root_url = curr_url.substring(0,curr_url.indexOf("dealer"));
   let params = useParams();
   let id =params.id;
-  let dealer_url = root_url+`djangoapp/dealer/${id}`;
+  let dealer_url = root_url+`djangoapp/get_dealers/${id}`;
   let reviews_url = root_url+`djangoapp/reviews/dealer/${id}`;
   let post_review = root_url+`postreview/${id}`;
   
@@ -31,8 +31,7 @@ const Dealer = () => {
     const retobj = await res.json();
     
     if(retobj.status === 200) {
-      let dealerobjs = Array.from(retobj.dealer)
-      setDealer(dealerobjs[0])
+        setDealer(retobj.dealer);
     }
   }
 
@@ -45,6 +44,7 @@ const Dealer = () => {
     if(retobj.status === 200) {
       if(retobj.reviews.length > 0){
         setReviews(retobj.reviews)
+        console.log("Dealer Reviews data:", retobj.reviews);
       } else {
         setUnreviewed(true);
       }
@@ -71,7 +71,7 @@ return(
   <div style={{margin:"20px"}}>
       <Header/>
       <div style={{marginTop:"10px"}}>
-      <h1 style={{color:"grey"}}>{dealer.full_name}{postReview}</h1>
+      <h1 style={{color:"grey"}}>{dealer['full_name']}{postReview}</h1>
       <h4  style={{color:"grey"}}>{dealer['city']},{dealer['address']}, Zip - {dealer['zip']}, {dealer['state']} </h4>
       </div>
       <div class="reviews_panel">
