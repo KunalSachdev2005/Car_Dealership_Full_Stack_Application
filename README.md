@@ -1,3 +1,3 @@
 # Car Dealership Full Stack Application
 
-![Architecture Diagram](./architecture_overview.png)
+![Architecture Diagram](./Architecture_Overview.png)
